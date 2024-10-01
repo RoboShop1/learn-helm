@@ -11,5 +11,5 @@ spec:
       containers:
         - name: demo-job
           image: busybox:latest
-          command: ["/bin/sh", "-c", "echo 'Running job';"]
+          command: ["/bin/sh", "-c", "echo 'Running job' && exit 1"]
       restartPolicy: Never
