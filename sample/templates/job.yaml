@@ -4,6 +4,7 @@ metadata:
   name: demo-job
   annotations:
     "helm.sh/hook": pre-install
+    "helm.sh/hook-delete-policy": hook-failed
 spec:
   backoffLimit: 1
   template:
