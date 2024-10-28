@@ -1,0 +1,26 @@
+{{/*
+{{- $name := "chaitu" -}}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  namespace: dev-ns
+  labels:
+   {{- range $key, $value := .Values.env2 }}
+    {{ $key }}: {{ $value }}
+   {{- end }}
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    containers:
+      - name: nginx
+        image: nginx
+        env:
+        {{- range $key,$value :=.Values.env2 }}
+          - env: {{ $key }}
+            value: {{ $value }}-{{ $name }}
+        {{- end }}
+*/}}

@@ -1,0 +1,10 @@
+{{/*
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm1
+data:
+  file1:
+    {{- .Files.Get "file1.txt" | nindent 8 }}
+    {{- .Files.Get "file1.txt" | nindent 8 }}
+*/}}

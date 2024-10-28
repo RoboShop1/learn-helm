@@ -1,0 +1,5 @@
+name: name1
+  {{- if or (eq .Values.name "chaitu") (eq .Values.name1 "ram" ) }}
+name1: Equal
+{{- end }}
+name3: {{ required "Mention name3" .Values.name3 }}
