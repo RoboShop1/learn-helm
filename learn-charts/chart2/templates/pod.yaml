@@ -1,16 +1,12 @@
-{{/*
-  apiVersion: v1
-  kind: Pod
-  metadata:
-    name: pod1
-    annotations:
-      "helm.sh/hook": post-install
-      "helm.sh/hook-weight": "-2"
-      "helm.sh/hook-delete-policy": hook-succeeded
-  spec:
-    restartPolicy: Never
-    containers:
-      - name: c1
-        image: alpine
-        command: [ "sleep","10" ]
-*/}}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod1
+  annotations:
+    "helm.sh/hook": pre-delete
+spec:
+  restartPolicy: Never
+  containers:
+    - name: c1
+      image: alpine
+      command: [ "sleep","20" ]
