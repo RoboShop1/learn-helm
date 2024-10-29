@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pod1
   annotations:
-    "helm.sh/hook": pre-delete
+    "helm.sh/hook": post-delete
 spec:
   containers:
     - name: c1
