@@ -15,9 +15,7 @@ spec:
       containers:
         - name: nginx
           image: nginx
-          env:
-            - name: NAME
-              value: revision1
-            - name: NAME1
-              value: revision4
+          envFrom:
+            - configMapRef:
+                name: cm1
 
