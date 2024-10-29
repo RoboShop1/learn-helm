@@ -18,4 +18,6 @@ spec:
           env:
             - name: NAME
               value: revision1
+            - name: NAME1
+              value: revision4
 
