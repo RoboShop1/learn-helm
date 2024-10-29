@@ -5,7 +5,6 @@ metadata:
   annotations:
     "helm.sh/hook": pre-delete
 spec:
-  restartPolicy: Never
   containers:
     - name: c1
       image: alpine
