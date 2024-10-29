@@ -3,10 +3,10 @@ kind: Pod
 metadata:
   name: pod1
   annotations:
-    "helm.sh/hook": post-delete
+    "helm.sh/hook": test
 spec:
   restartPolicy: Never
   containers:
     - name: c1
       image: alpine
-      command: [ "sleep","20" ]
+      command: [ "sleep","10" ]
