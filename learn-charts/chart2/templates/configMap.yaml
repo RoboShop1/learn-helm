@@ -4,7 +4,6 @@ metadata:
   name: cm1
   annotations:
     "helm.sh/hook": post-install
-    "helm.sh/hook-delete-policy": hook-succeeded
     "helm.sh/hook-weight": "-1"
 data:
   A_name1: chaitu1
