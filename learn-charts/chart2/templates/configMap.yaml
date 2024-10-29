@@ -1,3 +1,4 @@
+{{/*
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -9,4 +10,4 @@ metadata:
 data:
   A_name1: chaitu1
 
-
+*/}}
